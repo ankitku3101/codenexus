@@ -1,15 +1,31 @@
 "use client";
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export const Header = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    // Show the header after 3 seconds
+    const timeout = setTimeout(() => {
+      setIsVisible(true);
+    }, 6000); // 3000ms = 3 seconds
+
+    return () => clearTimeout(timeout); // Cleanup timeout
+  }, []);
+
   return (
     <>
-      <header className='absolute top-0 left-0 right-0 backdrop-blur-sm bg-transparent z-20'>
+      <header
+        className={`absolute top-0 left-0 right-0 backdrop-blur-sm bg-transparent z-20 transition-opacity duration-1000 ${
+          isVisible ? 'opacity-100' : 'opacity-0'
+        }`}
+      >
         <div className='py-5'>
           <div className='container'>
             <div className='flex items-center justify-center'>
-              <nav className='text-sm md:text-base flex gap-6 text-white/75 items-center rounded-full shadow-lg px-6 py-2'>
+              <nav className='text-sm md:text-base flex gap-6 text-white/75 items-center rounded-full px-6 py-2'>
                 <Link href="/#home" className='hover:text-white'>Home</Link>
                 <Link href="/#theme" className='hover:text-white'>Theme</Link>
                 <Link href="/#schedule" className='hover:text-white'>Schedule</Link>
