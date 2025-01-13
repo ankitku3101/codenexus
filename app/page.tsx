@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import { Theme } from "@/sections/Theme";
 import { ReactLenis } from "lenis/react";
 import LoadingScreen from "@/components/LoadingScreen"; 
+import Schedule from "@/sections/Schedule";
 
 const DynamicHero = dynamic(() => import("@/sections/Hero"), {
   loading: () => <LoadingScreen />, 
@@ -16,6 +17,7 @@ export default function Home() {
       <ReactLenis root>
         <DynamicHero /> 
         <Theme />
+        <Schedule />
       </ReactLenis>
     </>
   );

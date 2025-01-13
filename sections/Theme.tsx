@@ -7,11 +7,11 @@ import Image from "next/image";
 
 export function Theme() {
   return (
-    <div id="theme" className="h-screen pt-32">
-        <h1 className="text-3xl md:text-8xl font-bold text-center text-[#010002]">
+    <div id="theme" className="min-h-screen py-32">
+        <h1 className="text-5xl md:text-8xl font-bold text-center text-[#010002]">
             THEME
         </h1>
-        <p className="mt-4 font-normal text-base md:text-lg mx-auto text-center">
+        <p className="container mt-4 font-normal text-base md:text-lg mx-auto text-center">
           Check out our problemt statements of every theme for the hackathon.
         </p>
         <div className="container py-10 flex flex-col lg:flex-row items-center justify-center w-full gap-10 mx-auto px-16">

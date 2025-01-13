@@ -73,7 +73,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="relative overflow-hidden" ref={comp}>
+    <div id="home" className="relative overflow-hidden" ref={comp}>
       <div 
           id="intro-slider"
           className="h-screen p-40 bg-[#010002] absolute top-0 left-0 z-10 w-full flex flex-col gap-20 tracking-widest">
