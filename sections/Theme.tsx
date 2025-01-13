@@ -7,21 +7,21 @@ import Image from "next/image";
 
 export function Theme() {
   return (
-    <div id="theme" className="h-full">
-        <h1 className="text-3xl md:text-7xl font-bold text-center pt-16 text-green-400">
+    <div id="theme" className="h-screen pt-32">
+        <h1 className="text-3xl md:text-8xl font-bold text-center text-[#010002]">
             THEME
         </h1>
         <p className="mt-4 font-normal text-base md:text-lg mx-auto text-center">
           Check out our problemt statements of every theme for the hackathon.
         </p>
-        <div className="py-10 flex flex-col lg:flex-row items-center justify-center w-full gap-4 mx-auto px-16">
-            <Card title="Revealing Soon" icon={<AceternityIcon />}>
+        <div className="container py-10 flex flex-col lg:flex-row items-center justify-center w-full gap-10 mx-auto px-16">
+            <Card title="Revealing Soon" icon={<TempIcon />}>
             <CanvasRevealEffect
                 animationSpeed={5.1}
                 containerClassName="bg-emerald-900"
             />
             </Card>
-            <Card title="Revealing Soon" icon={<AceternityIcon />}>
+            <Card title="Revealing Soon" icon={<TempIcon />}>
             <CanvasRevealEffect
                 animationSpeed={3}
                 containerClassName="bg-black"
@@ -34,7 +34,7 @@ export function Theme() {
             {/* Radial gradient for the cute fade */}
             <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
             </Card>
-            <Card title="Revealing Soon" icon={<AceternityIcon />}>
+            <Card title="Revealing Soon" icon={<TempIcon />}>
             <CanvasRevealEffect
                 animationSpeed={3}
                 containerClassName="bg-sky-600"
@@ -91,7 +91,7 @@ const Card = ({
   );
 };
 
-const AceternityIcon = () => {
+const TempIcon = () => {
   return (
     <Image src={'/gift_logo_bk.png'} alt="logo" width={65} height={65} />
   );

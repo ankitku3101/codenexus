@@ -29,12 +29,12 @@ export default {
 		lg: "1200px",
 	},
 	container: {
-		center: true,
-		padding: {
-		  DEFAULT: "20px",
-		  lg: "80px",
-		},
-	},
+    center: true,
+    padding: {
+      DEFAULT: "20px",
+      lg: "80px",
+    },
+  },
     extend: {
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",

@@ -7,6 +7,8 @@ import { BackgroundBeams } from "@/components/ui/background-beams";
 
 export default function Hero() {
   const [counter, setCounter] = useState(0);
+  const [spotlightVisible, setSpotlightVisible] = useState(false); 
+  const comp = useRef(null);
 
   useEffect(() => {
     const targetDate = new Date("2025-02-14T00:00:00");
@@ -24,9 +26,7 @@ export default function Hero() {
     };
 
     const timer = setInterval(updateCountdown, 1000); 
-
     updateCountdown(); 
-
     return () => clearInterval(timer); 
   }, []);
 
@@ -35,11 +35,14 @@ export default function Hero() {
   const minutes = Math.floor((counter % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((counter % (1000 * 60)) / 1000);
 
-  const comp = useRef(null)
-
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
-      const t1 = gsap.timeline()
+      const t1 = gsap.timeline({
+        onComplete: () => {
+          setSpotlightVisible(true); 
+        },
+      });
+
       t1.from("#intro-slider", {
         xPercent: "-100",
         duration: 1.3,
@@ -63,12 +66,11 @@ export default function Hero() {
         .from("#welcome", {
           opacity: 0,
           duration: 0.8,
-        })
-    }, comp)
+        });
+    }, comp);
 
-    return () => ctx.revert()
-  }, [])
-  
+    return () => ctx.revert();
+  }, []);
 
   return (
     <div className="relative overflow-hidden" ref={comp}>
@@ -88,7 +90,9 @@ export default function Hero() {
         className="bg-center h-screen w-full flex items-center justify-center bg-[#090715] antialiased bg-grid-white/[0.02] relative overflow-hidden"
       >
         <div id="welcome">
-          <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="#D4CFEF" />
+          {spotlightVisible && (
+            <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="#D4CFEF" />
+          )}
           <div className="p-4 max-w-7xl mx-auto relative z-10 w-full pt-20 md:pt-0 text-center">  
             <h1 className="">
                 <span className="text-5xl md:text-9xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">CODE</span>
@@ -98,7 +102,7 @@ export default function Hero() {
               Code, Connect, and Create - It's All in the Nexus
             </p>
             <div className="grid grid-flow-col gap-5 text-center auto-cols-max mt-8 justify-center text-green-300 tracking-wider md:text-base">
-              <div className="flex flex-col items-center ">
+              <div className="flex flex-col items-center">
                 <span className="md:text-2xl text-green-300">{days}</span>
                 days
               </div>
