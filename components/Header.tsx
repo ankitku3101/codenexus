@@ -55,7 +55,7 @@ export const Header = () => {
                   Contact
                 </Link>
               </nav>
-              <div className="absolute right-6">
+              <div className="hidden md:block absolute right-6">
                 <Image src={"/gift_logo.png"} alt="logo" width={40} height={40} />
               </div>
             </div>

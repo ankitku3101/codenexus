@@ -5,6 +5,8 @@ import { Theme } from "@/sections/Theme";
 import { ReactLenis } from "lenis/react";
 import LoadingScreen from "@/components/LoadingScreen"; 
 import Schedule from "@/sections/Schedule";
+import Prizes from "@/sections/Prizes";
+import Contact from "@/sections/Contact";
 
 const DynamicHero = dynamic(() => import("@/sections/Hero"), {
   loading: () => <LoadingScreen />, 
@@ -18,6 +20,8 @@ export default function Home() {
         <DynamicHero /> 
         <Theme />
         <Schedule />
+        <Prizes />
+        <Contact />
       </ReactLenis>
     </>
   );
