@@ -3,7 +3,8 @@
 const Schedule = () => {
   return (
     <section id="schedule" className="min-h-full">
-      <div className="bg-[#010002] text-green-400 py-8">
+      <div className="relative bg-[#010002] bg-grid-small-white/[0.3] text-green-400 py-8">
+      <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-[#010002] [mask-image:radial-gradient(ellipse_at_center,transparent_30%,black)]"></div>
         <div className="container mx-auto flex flex-col items-start md:flex-row my-12 md:my-24">
             <div className="flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 px-8">
                 <p className="text-5xl md:text-8xl font-semibold mb-10">
@@ -43,7 +44,7 @@ const Schedule = () => {
                 <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
                   <div className="order-1 w-5/12"></div>
                   <div className="order-1 w-5/12 px-1 py-4 text-right">
-                    <p className="mb-3 text-base text-green-400">14-26 January, 2025</p>
+                    <p className="mb-3 text-base text-green-400">18-26 January, 2025</p>
                     <h4 className="mb-3 font-bold text-lg md:text-2xl">Registration</h4>
                     <p className="text-sm md:text-base leading-snug text-gray-50 text-opacity-100">
                       Choose your desired problem statement and register in that event by filling the required details. <br/>It's that easy :)

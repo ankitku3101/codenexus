@@ -13,7 +13,7 @@ function Prizes() {
             <p className="container font-normal my-4 text-base md:text-lg mx-auto text-center">
               Every achievement deserves its silent reward—prizes that say more than words.
             </p>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-36 py-10'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-36 py-10'>
               <BackgroundGradient className="rounded-[22px] max-w-sm p-4 sm:p-10 bg-[#010002]">
                 <Image
                   src={`/winner.png`}

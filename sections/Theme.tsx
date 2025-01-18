@@ -60,8 +60,9 @@ const Card = ({
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="border shadow-2xl bg-[#fff9c8]/40 border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2]  max-w-xs w-full mx-auto p-4 relative h-[25rem]"
+      className="border shadow-2xl bg-[#fff9c8]/40 bg-dot-black/[0.2] border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2]  max-w-xs w-full mx-auto p-4 relative h-[25rem]"
     >
+      <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-[#fff9c8]/40 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
       <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
       <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
