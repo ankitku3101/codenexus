@@ -101,7 +101,7 @@ export default function Hero() {
             <p className="mt-4 font-normal text-base md:text-lg tracking-normal md:tracking-wider text-neutral-300 max-w-lg mx-auto">
               Code, Connect, and Create - It's All in the Nexus
             </p>
-            <div className="grid grid-flow-col gap-5 text-center auto-cols-max mt-8 justify-center text-green-300 tracking-wider md:text-base">
+            <div className="grid grid-flow-col gap-5 text-center auto-cols-max my-8 justify-center text-green-300 tracking-wider md:text-base">
               <div className="flex flex-col items-center">
                 <span className="md:text-2xl text-green-300">{days}</span>
                 days
@@ -119,6 +119,12 @@ export default function Hero() {
                 sec
               </div>
             </div>
+            <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 bg-slate-500">
+              <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#e2e8f0_0%,#64748b_50%,#e2e8f0_100%)]" />
+              <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-[#010002] px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+                Register Now
+              </span>
+            </button>
           </div>
         </div>
         <BackgroundBeams />
