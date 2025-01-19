@@ -38,7 +38,7 @@ export const Header = () => {
         <div className="py-5">
           <div className="container">
             <div className="flex items-center justify-center">
-              <nav className="text-sm md:text-base flex gap-6 text-white/75 items-center rounded-full px-6 py-1">
+              <nav className="text-sm md:text-base flex gap-3 md:gap-6 text-white/75 items-center rounded-full md:px-6 py-1">
                 <Link href="/#home" className="hover:text-white">
                   Home
                 </Link>

@@ -76,10 +76,10 @@ export default function Hero() {
     <div id="home" className="h-screen relative overflow-hidden" ref={comp}>
       <div 
           id="intro-slider"
-          className="h-screen bg-[#010002] absolute top-0 left-0 z-10 w-full flex flex-col gap-20 tracking-widest justify-center pl-20">
-          <h1 className="text-6xl md:text-9xl text-green-300 font-semibold" id="title-1">CODE</h1>
-          <h1 className="text-6xl md:text-9xl text-green-300 font-semibold" id="title-2">CONNECT</h1>
-          <h1 className="text-6xl md:text-9xl text-green-300 font-semibold" id="title-3">CREATE</h1>
+          className="h-screen bg-[#010002] absolute top-0 left-0 z-10 w-full flex flex-col gap-20 tracking-widest justify-center">
+          <h1 className="text-6xl md:text-9xl text-green-300 font-semibold container" id="title-1">CODE</h1>
+          <h1 className="text-6xl md:text-9xl text-green-300 font-semibold container" id="title-2">CONNECT</h1>
+          <h1 className="text-6xl md:text-9xl text-green-300 font-semibold container" id="title-3">CREATE</h1>
       </div>
       <div
         style={{

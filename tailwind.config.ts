@@ -28,11 +28,11 @@ export default {
     "./sections/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-	screens: {
-		sm: "375px",
-		md: "768px",
-		lg: "1200px",
-	},
+  screens: {
+    sm: "375px",
+    md: "768px",
+    lg: "1200px",
+  },
 	container: {
     center: true,
     padding: {

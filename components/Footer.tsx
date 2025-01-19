@@ -9,22 +9,22 @@ function Footer() {
       <div className="flex flex-col lg:flex-row justify-between items-center">
         <Image 
           src="/gift_logo_bk.png" 
-          width={120} 
+          width={100} 
           height={100} 
           alt="logo" 
           className="mb-4 lg:mb-0 md:w-[150px] md:h-[150px] lg:w-[170px] lg:h-[180px]" 
         />
         <div className="text-center">
-          <p className="text-lg sm:text-lg font-semibold">
+          <p className="text-lg sm:text-sm font-semibold">
             14th-15th February 2025
           </p>
-          <h1 className="text-4xl sm:text-4xl lg:text-7xl font-bold">
+          <h1 className="text-3xl md:text-4xl lg:text-7xl font-bold">
             CODENEXUS
           </h1>
-          <p className="text-lg sm:text-lg font-semibold">
+          <p className="text-sm md:text-lg font-semibold">
             GIFT Autonomous Bhubaneswar
           </p>
-          <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 justify-center items-center mt-4">
+          <div className="flex flex-col sm:flex-row gap-2 md:gap-4 justify-center items-center mt-4 text-sm md:text-base">
             <Link href="https://top-autonomous-college-in-odisha.gift.edu.in/" className="flex items-center gap-2">
               <FaGlobe />
               gift.edu.in

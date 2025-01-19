@@ -16,7 +16,7 @@ function Contact() {
             whether it’s about participation, the schedule, or the venue!
           </p>
         </div>
-        <div className="p-8 md:p-20 md:mb-0 sm:mb-12">
+        <div className="p-8 md:p-20">
           <APIProvider apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY as string}>
             <div
               id="map-container"
