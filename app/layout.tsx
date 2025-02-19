@@ -10,7 +10,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "CODENEXUS | GIFT Autonomous",
+  title: "FESTRONIX | GIFT Autonomous",
   description: "A 24-hour hackathon at Gandhi Institute for Technology, Bhubaneswar",
 };
 

@@ -11,7 +11,7 @@ export default function Hero() {
   const comp = useRef(null);
 
   useEffect(() => {
-    const targetDate = new Date("2025-02-14T00:00:00");
+    const targetDate = new Date("2025-03-06T00:00:00");
 
     const updateCountdown = () => {
       const currentDate = new Date();
@@ -95,8 +95,8 @@ export default function Hero() {
           )}
           <div className="p-4 max-w-7xl mx-auto relative z-10 w-full pt-20 md:pt-0 text-center">  
             <h1 className="">
-                <span className="text-5xl md:text-9xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">CODE</span>
-                <span className="text-5xl md:text-9xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-green-300 to-green-500 bg-opacity-50">NEXUS</span>
+                <span className="text-5xl md:text-9xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">FEST</span>
+                <span className="text-5xl md:text-9xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-green-300 to-green-500 bg-opacity-50">RONIX</span>
             </h1>
             <p className="mt-4 font-normal text-base md:text-lg tracking-normal md:tracking-wider text-neutral-300 max-w-lg mx-auto">
               Code, Connect, and Create - It's All in the Nexus

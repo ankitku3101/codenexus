@@ -19,7 +19,7 @@ function Footer() {
             14th-15th February 2025
           </p>
           <h1 className="text-3xl md:text-4xl lg:text-7xl font-bold">
-            CODENEXUS
+            FESTRONIX
           </h1>
           <p className="text-sm md:text-lg font-semibold">
             GIFT Autonomous Bhubaneswar
