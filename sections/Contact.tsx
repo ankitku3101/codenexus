@@ -13,7 +13,9 @@ function Contact() {
           </h1>
           <p className="container font-normal text-base md:text-lg text-center text-white mt-2 -mb-20 md:mb-0">
             Reach out anytime<br />
-            whether it’s about participation, the schedule, or the venue!
+            whether it’s about participation, the schedule, or the venue!<br/><br/>
+            Ankit Kumar 7257830827<br />
+            Mohanty Hitesh 7205374495<br />
           </p>
         </div>
         <div className="p-8 md:p-20">

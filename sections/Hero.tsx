@@ -11,7 +11,7 @@ export default function Hero() {
   const comp = useRef(null);
 
   useEffect(() => {
-    const targetDate = new Date("2025-03-06T00:00:00");
+    const targetDate = new Date("2025-03-20T00:00:00");
 
     const updateCountdown = () => {
       const currentDate = new Date();

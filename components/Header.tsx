@@ -43,7 +43,7 @@ export const Header = () => {
                   Home
                 </Link>
                 <Link href="/#theme" className="hover:text-white">
-                  Events
+                  Theme
                 </Link>
                 <Link href="/#schedule" className="hover:text-white">
                   Schedule
