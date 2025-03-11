@@ -27,10 +27,10 @@ function Prizes() {
                   Prizepool of
                 </p>
                 <h2 className="text-2xl md:text-5xl mb-2 text-green-300 text-center font-semibold">
-                  ₹ 1,00,000
+                  ₹ 30,000
                 </h2>
                 <p className="text-sm md:text-base text-white text-center ">
-                  for the winners
+                  along with internship oppurtunities
                 </p>
               </BackgroundGradient>
               <BackgroundGradient className="rounded-[22px] max-w-sm p-4 sm:p-10 bg-[#010002]">

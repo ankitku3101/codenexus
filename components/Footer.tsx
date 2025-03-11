@@ -1,7 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import localFont from 'next/font/local'
 import React from 'react';
 import { FaGlobe, FaInstagram, FaLinkedin } from "react-icons/fa";
+
+const myFont = localFont({ src: '../styles/fonts/RapierZeroItalic.otf' })
 
 function Footer() {
   return (
@@ -16,9 +19,9 @@ function Footer() {
         />
         <div className="text-center">
           <p className="text-lg sm:text-sm font-semibold">
-            14th-15th February 2025
+            20-21 March 2025
           </p>
-          <h1 className="text-3xl md:text-4xl lg:text-7xl font-bold">
+          <h1 className={`${myFont.className} text-3xl md:text-4xl lg:text-7xl tracking-wide`}>
             FESTRONIX
           </h1>
           <p className="text-sm md:text-lg font-semibold">
