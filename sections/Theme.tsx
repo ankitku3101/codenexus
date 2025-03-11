@@ -7,12 +7,12 @@ import Image from "next/image";
 
 export function Theme() {
   return (
-    <div id="theme" className="min-h-screen py-20">
-        <h1 className="text-5xl md:text-8xl font-bold text-center text-[#010002]">
-            THEME
+    <div id="ps" className="min-h-screen py-20">
+        <h1 className="text-4xl md:text-7xl font-bold text-center text-[#010002]">
+            PROBLEM STATEMENT
         </h1>
         <p className="container mt-4 font-normal text-base md:text-lg mx-auto text-center">
-          Check out the theme and problem statement for CodeNexus organized under Festronix 2025
+          Check out the problem statement for CodeNexus-Hackathon organized under Festronix 2025
         </p>
         <div className="container py-10 flex flex-col lg:flex-row items-center justify-center w-full gap-10 mx-auto px-16">
             <Card title="Revealing Soon" icon={<TempIcon />}>
@@ -21,26 +21,7 @@ export function Theme() {
                 containerClassName="bg-emerald-900"
             />
             </Card>
-            <Card title="Revealing Soon" icon={<TempIcon />}>
-            <CanvasRevealEffect
-                animationSpeed={3}
-                containerClassName="bg-black"
-                colors={[
-                [236, 72, 153],
-                [232, 121, 249],
-                ]}
-                dotSize={2}
-            />
-            {/* Radial gradient for the cute fade */}
-            <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
-            </Card>
-            <Card title="Revealing Soon" icon={<TempIcon />}>
-            <CanvasRevealEffect
-                animationSpeed={3}
-                containerClassName="bg-sky-600"
-                colors={[[125, 211, 252]]}
-            />
-            </Card>
+            
         </div>
     </div>
   );

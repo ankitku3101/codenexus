@@ -4,6 +4,11 @@ import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { Spotlight } from "@/components/ui/spotlight";
 import gsap from "gsap";
 import { BackgroundBeams } from "@/components/ui/background-beams";
+import localFont from 'next/font/local'
+import Link from "next/link";
+
+const myFont = localFont({ src: '../styles/fonts/RapierZeroItalic.otf' })
+
 
 export default function Hero() {
   const [counter, setCounter] = useState(0);
@@ -94,7 +99,13 @@ export default function Hero() {
             <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="#D4CFEF" />
           )}
           <div className="p-4 max-w-7xl mx-auto relative z-10 w-full pt-20 md:pt-0 text-center">  
-            <h1 className="">
+            <p className="mt-4 font-normal text-xs md:text-base tracking-normal text-neutral-300 max-w-lg mx-auto">
+              24 Hours Hackathon organized under <br className="md:hidden" />
+              <Link href={'https://festronix.vercel.app'}>
+                <span className={`${myFont.className} text-lg md:text-2xl tracking-wider`}> FESTR<span className="text-green-400">O</span>NI<span className="text-green-400">X</span></span> <br/>
+              </Link>
+            </p>
+            <h1 className="mt-4">
                 <span className="text-5xl md:text-9xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">CODE</span>
                 <span className="text-5xl md:text-9xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-green-300 to-green-500 bg-opacity-50">NEXUS</span>
             </h1>
@@ -125,7 +136,7 @@ export default function Hero() {
             <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 bg-slate-500">
               <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#e2e8f0_0%,#64748b_50%,#e2e8f0_100%)]" />
               <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-[#010002] px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-                Register Now
+                Registrations Opening Soon
               </span>
             </button>
           </div>

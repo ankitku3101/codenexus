@@ -69,7 +69,7 @@ const Schedule = () => {
                     <p className="mb-3 text-base text-green-400">18 March, 2025</p>
                     <h4 className="mb-3 font-bold text-lg md:text-2xl">Shortlisting</h4>
                     <p className="text-sm md:text-base leading-snug text-gray-50 text-opacity-100">
-                      After evaluating your ideas/solutions, the top 20 teams will be selected for the final Hackathon.
+                      After evaluating your ideas/solutions, the top teams will be selected for the final Hackathon.
                     </p>
                   </div>
                 </div>
