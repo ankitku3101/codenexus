@@ -47,7 +47,7 @@ const Schedule = () => {
                     <p className="mb-3 text-base text-green-400">12-18 March, 2025</p>
                     <h4 className="mb-3 font-bold text-lg md:text-2xl">Registration</h4>
                     <p className="text-sm md:text-base leading-snug text-gray-50 text-opacity-100">
-                      Choose your desired problem statement and register in that event by filling the required details. <br/>It's that easy :)
+                      Check out the problem statement and register yourselves by filling the required details. <br/>It's that easy :)
                     </p>
                   </div>
                 </div>
