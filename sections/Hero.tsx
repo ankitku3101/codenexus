@@ -133,12 +133,17 @@ export default function Hero() {
             <p className="my-4 font-normal text-base md:text-lg tracking-normal md:tracking-wider text-neutral-300 max-w-lg mx-auto">
               20-21st March 2025
             </p>
-            <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 bg-slate-500">
-              <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#e2e8f0_0%,#64748b_50%,#e2e8f0_100%)]" />
-              <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-[#010002] px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-                Registrations Opening Soon
-              </span>
-            </button>
+            <p className="my-4 font-normal text-sm md:text-md tracking-normal md:tracking-wider text-neutral-300 max-w-lg mx-auto">
+              Last Date of Registration: 18-03-2025 23:59 PM 
+            </p>
+            <Link href={'https://forms.gle/TPCnvfWpca28QNWZ6'}>
+              <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 bg-slate-500">
+                <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#e2e8f0_0%,#64748b_50%,#e2e8f0_100%)]" />
+                <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-[#010002] px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+                  Register Now !
+                </span>
+              </button>
+            </Link>
           </div>
         </div>
         <BackgroundBeams />

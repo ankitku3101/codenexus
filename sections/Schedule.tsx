@@ -44,7 +44,7 @@ const Schedule = () => {
                 <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
                   <div className="order-1 w-5/12"></div>
                   <div className="order-1 w-5/12 px-1 py-4 text-right">
-                    <p className="mb-3 text-base text-green-400">12-17 March, 2025</p>
+                    <p className="mb-3 text-base text-green-400">12-18 March, 2025</p>
                     <h4 className="mb-3 font-bold text-lg md:text-2xl">Registration</h4>
                     <p className="text-sm md:text-base leading-snug text-gray-50 text-opacity-100">
                       Choose your desired problem statement and register in that event by filling the required details. <br/>It's that easy :)
@@ -55,7 +55,7 @@ const Schedule = () => {
                 <div className="mb-8 flex justify-between items-center w-full right-timeline">
                   <div className="order-1 w-5/12"></div>
                   <div className="order-1 w-5/12 px-1 py-4 text-left">
-                    <p className="mb-3 text-base text-green-400">12-17 March, 2025</p>
+                    <p className="mb-3 text-base text-green-400">12-18 March, 2025</p>
                     <h4 className="mb-3 font-bold text-lg md:text-2xl">Idea Submission</h4>
                     <p className="text-sm md:text-base leading-snug text-gray-50 text-opacity-100">
                       Put on your thinking caps and submit a proposed idea/solution for your problem.
@@ -66,7 +66,7 @@ const Schedule = () => {
                 <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
                   <div className="order-1 w-5/12"></div>
                   <div className="order-1 w-5/12 px-1 py-4 text-right">
-                    <p className="mb-3 text-base text-green-400">18 March, 2025</p>
+                    <p className="mb-3 text-base text-green-400">18-19 March, 2025</p>
                     <h4 className="mb-3 font-bold text-lg md:text-2xl">Shortlisting</h4>
                     <p className="text-sm md:text-base leading-snug text-gray-50 text-opacity-100">
                       After evaluating your ideas/solutions, the top teams will be selected for the final Hackathon.

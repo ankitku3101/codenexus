@@ -4,25 +4,31 @@ import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
 import Image from "next/image";
+import Link from "next/link";
 
 export function Theme() {
   return (
-    <div id="ps" className="min-h-screen py-20">
+    <div id="ps" className="min-h-full py-20">
+      <div className="flex flex-col items-center">
         <h1 className="text-4xl md:text-7xl font-bold text-center text-[#010002]">
             PROBLEM STATEMENT
         </h1>
         <p className="container mt-4 font-normal text-base md:text-lg mx-auto text-center">
           Check out the problem statement for CodeNexus-Hackathon organized under Festronix 2025
         </p>
-        <div className="container py-10 flex flex-col lg:flex-row items-center justify-center w-full gap-10 mx-auto px-16">
-            <Card title="Revealing Soon" icon={<TempIcon />}>
-            <CanvasRevealEffect
-                animationSpeed={5.1}
-                containerClassName="bg-emerald-900"
-            />
-            </Card>
-            
+        <div className="flex flex-col md:flex-row gap-4 items-center">
+          <Link href={'https://docs.google.com/document/d/1C2ic9UM1mflsYV8qWc7EtzrAO8YFcDhT/edit?usp=sharing&ouid=111044100660170070734&rtpof=true&sd=true'}>
+            <button className="shadow-[inset_0_0_0_2px_#616467] text-black px-8 py-2 mt-6 rounded-full tracking-widest uppercase font-bold bg-transparent hover:bg-[#616467] hover:text-white dark:text-neutral-200 transition duration-200">
+              Guidelines
+            </button>
+          </Link>
+          <Link href={'https://drive.google.com/file/d/1zrBh2KE0ok1CmbkZmhIOwM9RsYrIG4uL/view?usp=sharing'}>
+            <button className="shadow-[inset_0_0_0_2px_#616467] text-black px-8 py-2 mt-6 rounded-full tracking-widest uppercase font-bold bg-transparent hover:bg-[#616467] hover:text-white dark:text-neutral-200 transition duration-200">
+              Problem Statement
+            </button>
+          </Link>
         </div>
+      </div>
     </div>
   );
 }
