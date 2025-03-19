@@ -134,10 +134,10 @@ export default function Hero() {
               20-21st March 2025
             </p>
             <p className="my-4 font-normal text-sm md:text-md tracking-normal md:tracking-wider text-neutral-300 max-w-lg mx-auto">
-              Last Date of Registration (Extended): 19-03-2025 11:00 AM 
+              Last Date of Registration (Extended): 19-03-2025 01:00 PM 
             </p>
             <p className="my-4 font-normal text-sm md:text-md tracking-normal md:tracking-wider text-neutral-300 max-w-lg mx-auto">
-              Finalists Anounncement: 19-03-2025 12:30 PM
+              Finalists Anounncement: 19-03-2025 02:00 PM
             </p>
             <Link href={'https://forms.gle/TPCnvfWpca28QNWZ6'}>
               <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 bg-slate-500">
